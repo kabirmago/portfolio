@@ -2,12 +2,12 @@
 
 Full-stack developer based in New York City. Class of 2029.
 
-I build side projects across web development and AI, and I'm into debate and discourse, soccer, and sneakers.
+Outside of code: discourse, soccer, and golf.
 
-## What I've built
+## Projects
 
-- **[Logos](https://logosapp.me)**: a debate and discourse analysis app
-- **UFC Fight Predictor**: an ELO + XGBoost model for predicting fights
+- **[Logos](https://logosapp.me)**: a discourse analysis app
+- **[UFC Fight Predictor](https://github.com/kabirmago/ufc-fight-predictor)**: an ELO + XGBoost model for predicting fights
 
 ## Find me
 
