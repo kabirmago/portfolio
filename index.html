@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kabir Mago</title>
+<meta name="description" content="Kabir Mago is a full-stack developer in New York City.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231B5E3F'/><text x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F1F4F0;
+  --ink: #0F1613;
+  --muted: #56625B;
+  --rule: #C9D2CB;
+  --accent: #1B5E3F;
+  --on-accent: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0E1411;
+    --ink: #EAF0EB;
+    --muted: #9AA79F;
+    --rule: #26322B;
+    --accent: #6FCF9C;
+    --on-accent: #0E1411;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+::selection { background: var(--accent); color: var(--on-accent); }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.wrap { max-width: 60rem; margin: 0 auto; padding: 0 1rem; }
+.hero { padding-top: clamp(3rem, 14vh, 8rem); }
+h1 {
+  margin: 0;
+  font-family: "Young Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(3.75rem, 15vw, 9.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+}
+h1 span { display: block; }
+.intro {
+  max-width: 30rem;
+  margin: 2rem 0 0;
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+main > section { margin-top: clamp(3.5rem, 10vh, 6rem); }
+h2 {
+  margin: 0 0 1rem;
+  font-family: "Young Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.projects { list-style: none; margin: 0; padding: 0; }
+.projects li { border-top: 1px solid var(--rule); }
+.projects li:last-child { border-bottom: 1px solid var(--rule); }
+.projects a {
+  display: grid;
+  gap: 0.25rem 2rem;
+  padding: 1.5rem 0;
+  text-decoration: none;
+}
+.projects .name {
+  font-family: "Young Serif", Georgia, serif;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.1;
+  transition: color 0.15s ease;
+}
+.projects .desc { color: var(--muted); max-width: 34rem; }
+.projects .meta {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.projects a:hover .name,
+.projects a:focus-visible .name { color: var(--accent); }
+@media (min-width: 44rem) {
+  .projects a {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto;
+    align-items: baseline;
+  }
+}
+.about p { margin: 0; max-width: 34rem; }
+footer { margin: clamp(3.5rem, 10vh, 6rem) 0 3rem; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1><span>Kabir</span><span>Mago</span></h1>
+    <p class="intro">Full-stack developer in New York City. Class of 2029.</p>
+  </header>
+  <main>
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="projects">
+        <li>
+          <a href="https://logosapp.me">
+            <span class="name">Logos</span>
+            <span class="desc">A discourse analysis app.</span>
+            <span class="meta">logosapp.me</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/kabirmago/ufc-fight-predictor">
+            <span class="name">UFC Fight Predictor</span>
+            <span class="desc">Win probabilities for UFC fights from an XGBoost model blended with ELO ratings, written in pure JavaScript.</span>
+            <span class="meta">View on GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Outside of code</h2>
+      <p>Discourse, soccer, and golf.</p>
+    </section>
+  </main>
+  <footer>
+    <a href="https://github.com/kabirmago">github.com/kabirmago</a>
+  </footer>
+</div>
+</body>
+</html>
