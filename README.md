@@ -8,8 +8,6 @@ I build side projects across web development and AI, and I'm into debate and dis
 
 - **[Logos](https://logosapp.me)**: a debate and discourse analysis app
 - **UFC Fight Predictor**: an ELO + XGBoost model for predicting fights
-- **Drift**: a fishing intelligence app
-- Plus SlateAI, ContextOS, Arca Finance, CardShark, Halo, Mesh, and JARVIS
 
 ## Find me
 
